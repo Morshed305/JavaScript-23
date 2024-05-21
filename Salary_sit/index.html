@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morshed</title>
+    <link rel="stylesheet" href="./Css/style.min.css">
+</head>
+
+<body>
+    <div class="text_1">
+        <h1>Monthly Statements</h1>
+    </div>
+    <div class="Main">
+
+
+        <div class="pic">
+            <div class="pic1 ">
+                <div class="Active"><img src="./pic/income.png" alt=""></div>
+            </div>
+            <div class="pic2 ">
+                <div class="Active"> <img src="./pic/food.png" alt=""></div>
+            </div>
+            <div class="pic3 ">
+                <div class="Active"><img src="./pic/rant.png." alt=""></div>
+            </div>
+            <div class="pic4 ">
+                <div class="Active"><img src="./pic/clothes.png." alt=""></div>
+            </div>
+            <div class="pic5 ">
+                <div class="Active"><img src="./pic/Save.png." alt=""></div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="Salary">
+            <p class="p1">Income</p>
+            <!-- p -->
+
+            <div class="in_box">
+                <div class="in_text">
+                    <p>Income :</p>
+                </div>
+
+                <div>
+                    <div class="input Div_one">
+                        <input type="number" id="Income" class="input_text">
+                        <!-- <div id="Income_invalid"></div> -->
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <p class="p2">Expenses</p>
+            <!-- p -->
+
+
+
+            <div class="in_box">
+                <div class="in_text">
+                    <p>Food :</p>
+                </div>
+
+                <div>
+                    <div class="input Div_two">
+                        <input type="number" id="Food" class="input_text">
+                    </div>
+                </div>
+
+            </div>
+            <div class="in_box">
+                <div class="in_text">
+                    <p>Rent :</p>
+                </div>
+                <div>
+                    <div class="input Div_three">
+                        <input type="number" id="Rent" class="input_text">
+                    </div>
+                </div>
+
+            </div>
+            <div class="in_box">
+                <div class="in_text">
+                    <p>Clothes :</p>
+                </div>
+                <div>
+                    <div class="input Div_four">
+                        <input type="number" id="Clothes" class="input_text">
+                    </div>
+                </div>
+
+            </div>
+            <div class="Calculate">
+                <button onclick="Morshed()" id="Calculate">Calculate</button>
+
+            </div>
+            <div class="out_box">
+
+                <p class="p3">Total Expenses:</p>
+                <!-- p                -->
+                <div class="output" id="Total_Expenses">
+
+                </div>
+            </div>
+
+
+            <div class="out_box">
+
+                <p class="p3">Balance:</p>
+                <!-- p -->
+                <div id="Balance" class="output">
+
+                </div>
+            </div>
+
+
+            <div class="in_box two_inp">
+                <div class="in_text in_text_two">
+                    <p>Save :</p>
+                </div>
+                <div class="two_in">
+                    <div class="input">
+                        <div class="Div_five">
+                            <input type="number" id="persent" class="save input_text">
+                        </div>
+                        <p>%</p>
+                        <button onclick="Morshed_alam()" id="Saved" class="save1">Save</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- pp -->
+            <div class="out_box">
+                <p class="p3">Saving Amount:</p>
+                <div id="Saving_Amount" class="output">
+                </div>
+            </div>
+
+            <div class="out_box">
+                <p class="p3">Remaining Balance:</p>
+                <div id="Remaining_Balance" class="output">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./Js/index.js"></script>
+</body>
+
+</html>

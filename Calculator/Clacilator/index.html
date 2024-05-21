@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/Style.css" />
+  </head>
+  <body>
+<div class="Body">
+        <div id="calculator" class="maindiv">
+
+          
+          <div class="modelBody">
+            <span class="modelName">
+              <sup>Model</sup>
+              <b style="font-weight: bolder; color: rgb(0, 0, 0)">Morshed-2.0</b>
+              <sub>Bd</sub>
+            </span>
+            <Span class="modelSowroPanel">
+              <Span class="PanelStick">|</Span>
+              <Span class="PanelStick">|</Span>
+              <Span class="PanelStick">|</Span>
+              <Span class="PanelStick">|</Span>
+            </Span>
+          </div>
+          
+
+          <div class="InputDisplay">
+            <input type="button" id="display" />
+          </div>
+
+          <div class="DivAc">
+            <input
+              type="button"onclick="Allclear ('AC')"value="AC"class="Ac"/>
+            <input
+              type="button"onclick="LastCharacterdelete('DEL')"value="DEL" class="DEL"/>
+            <button onclick="Morshed('.')" class="color">.</button>
+            <button onclick="Morshed('/')" class="color">/</button>
+          </div>
+
+          <div class="div7">
+            <button onclick="Morshed('7')" class="NumberColor">7</button>
+            <button onclick="Morshed('8')" class="NumberColor">8</button>
+            <button onclick="Morshed('9')" class="NumberColor">9</button>
+            <button onclick="Morshed('*')" class="color">*</button>
+          </div>
+
+          <div class="div4">
+            <button onclick="Morshed('4')" class="NumberColor">4</button>
+            <button onclick="Morshed('5')" class="NumberColor">5</button>
+            <button onclick="Morshed('6')" class="NumberColor">6</button>
+            <button onclick="Morshed('-')" class="operator color">-</button>
+          </div>
+
+          <div class="div1">
+            <button onclick="Morshed('1')" class="NumberColor">1</button>
+            <button onclick="Morshed('2')" class="NumberColor">2</button>
+            <button onclick="Morshed('3')" class="NumberColor">3</button>
+            <button onclick="Morshed('+')" class="operator color">+</button>
+          </div>
+
+          <div class="Divequal">
+            <button onclick="Morshed('00')" class="NumberColor">00</button>
+            <button onclick="Morshed('0')" class="NumberColor">0</button>
+            <input type="button" onclick="Total('')" value="=" class="Equal" />
+          </div>
+          
+        </div>
+      </div>
+    <script src="./js/node.js"></script>
+    
+  </body>
+</html>

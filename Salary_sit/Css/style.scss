@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.text_1 {
+    width: 1020px;
+    margin: auto;
+    margin-top: 45px;
+    display: grid;
+    place-items: center;
+
+    >h1 {
+        font-size: 44px;
+        color: #000;
+    }
+
+}
+
+.Main {
+    width: 1020px;
+    height: auto;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 100px;
+    display: flex;
+
+
+    >.pic {
+        width: 500px;
+        height: 700px;
+        background: #e0e9e8c4;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        >.pic1 {
+            position: absolute;
+        }
+        >.pic2 {
+            position: absolute;
+        }
+        >.pic3 {
+            position: absolute;
+        }
+        >.pic4 {
+            position: absolute;
+        }
+        >.pic5 {
+            position: absolute;
+        }
+
+    }
+
+    >.Salary {
+        border-radius: 20px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        width: 500px;
+        height: 700px;
+        background: #e5f0f3;
+        margin-left: 20px;
+        display: grid;
+
+        >.p1 {
+            margin-top: 10px;
+            color: #000000;
+            font-size: 30px;
+            margin: auto;
+        }
+
+        >.two_inp {
+            margin-top: 10px;
+        }
+
+        >.in_box {
+            display: flex;
+            overflow: hidden;
+
+            >.in_text {
+                text-align: right;
+                margin-left: -60px;
+                margin-right: 60px;
+                height: 25px;
+
+                >p {
+                    margin-top: 1px;
+                    font-size: 19px;
+                }
+            }
+
+            >div {
+                >.input {
+                    >input {
+                        width: 150px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 22px;
+                        background: rgb(204, 208, 209);
+                        text-align: center;
+                    }
+                }
+            }
+
+
+            >div {
+                width: 250px;
+            }
+
+            >.in_text_two {
+                margin-left: 110px;
+                width: 50px;
+                margin-right: -0px;
+            }
+
+            >.two_in {
+
+                >.input {
+                    display: flex;
+
+                  
+
+                    >div {
+                        >.save {
+                            width: 100px;
+                            height: 28px;
+                            font-size: 17px;
+                            text-align: center;
+                            border-radius: 5px;
+                            border: none;
+                            background: rgb(204, 208, 209);
+                            font-size: 22px;
+                        }
+                    }
+                    >p {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        font-size: x-large;
+                    }
+
+                    >.save1 {
+                        position: absolute;
+                        margin-left: 150px;
+                        width: 100px;
+                        height: 40px;
+                        background: #3b82f6;
+                        font-size: 20px;
+                        color: white;
+                        border-radius: 5px;
+                        border: none;
+                        margin-top: -8px;
+
+                        &:hover {
+                            background: #1d4ed8;
+                        }
+
+                        &::placeholder {
+                            color: white;
+                            font-size: 17px;
+                            text-align: center;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        >.Calculate {
+            >button {
+                width: 130px;
+                height: 50px;
+                border-radius: 5px;
+                margin-left: 185px;
+                background: #3b82f6;
+                border: none;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+
+                &:hover {
+                    background: #1d4ed8;
+                }
+            }
+        }
+
+        >p:hover {
+            color: #8710e9;
+            font-size: 36px;
+            margin: auto;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
+
+
+        >.p2 {
+            color: #000000;
+            font-size: 30px;
+            margin: auto;
+        }
+
+        >.out_box {
+            display: flex;
+            overflow: hidden;
+
+            >.p3 {
+                margin-left: 10px;
+                margin-right: 20px;
+                text-align: right;
+                width: 250px;
+                color: #000000;
+                font-size: 25px;
+                height: 25px;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            >.output {
+                height: 25px;
+                width: 170px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 10px;
+                font-size: 25px;
+
+            }
+        }
+
+    }
+}
