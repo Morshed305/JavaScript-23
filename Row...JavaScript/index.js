@@ -1,11 +1,25 @@
-
-//functiom with peramiter/argoment+++++++++++++++
-
+//function...+++++++++++++++++++
+//Sum in function
+function Sum(a , b){
+    return a + b;
+}
+console.log(Sum(5 , 10));
+//functiom with peramiter/argoment------------
 function morshed(x1, x2, x3, x4) {
     return (((x1 + x2) * x3) % x4);
 }
 console.log(morshed(5, 5, 3, 9));
 console.log("break")
+
+//String.length(String gonona)
+let str = "Hello, World!a";
+  function count(a) {
+    var x = str.length;
+    return x;
+  }
+  console.log( count(str));
+
+
 //Function with Swith
 function subo(type, x1, x2) {
     switch (type) {
@@ -50,6 +64,19 @@ if (age <= 0) {
 else {
     console.log("You are not in the world");
 }
+
+//even and odd number
+var int =11;
+  function count(a) {
+    if(int % 2 == 0){
+        return 'Even';
+    }else{
+        return 'Odd'
+  }}
+  console.log(count(int));
+
+
+
 //Nested If--------
 var age = 7;
 var gender = "Female";
@@ -144,6 +171,30 @@ for (var i1 = 3; i1 < 8; i1++) {
 }
 
 //Array++++++++++++++++++++++++++++
+console.log("All Values in Array Function")
+const Array1 =[200,10,60,500,34,56,78,55]
+function AllValues(b) {
+  for (var i = 0; i < Array1.length; i++) {     
+  console.log(Array1[i]);  
+  }
+}
+AllValues(Array1)
+//Big number chek in Array
+console.log("big number");
+const Array = [12, 5, 27, 8, 16, 80,2];
+function big_number (a) {
+    let x = Array[0];
+    for (let i = 1; i < Array.length; i++) {
+      if (Array[i] > x) {
+        x = Array[i];
+      }
+    }
+    return x;
+  }
+  console.log(big_number (Array));
+
+
+//2nd test
 var names = ["Morshed", "Rahim", "Karim", "Sanjid",
     "Anika"];
 // console.log(ArraySubo[2]);
@@ -199,6 +250,45 @@ function a(){
     console.log(a+b);
 };
 
+
+//Scope(global && local)++++++++++++++++++++
+
+//global
+var msg1 = "Global Scope-Morshed";
+function fun1(){
+    console.log(msg1);
+}
+fun1();
+
+//local
+function fun2(){
+var msg2="Local Scope-Morshed";
+console.log(msg2)
+}
+fun2();
+
+//Map...Filter++++++++++++++++++++++++++++
+console.log("Map")
+var arr1 =[1,2,3,4,5];
+arr1.map(function(x){
+    console.log(x)
+})
+//filter
+console.log("filter")
+var arr2 =[1,2,3,4,5,6,7,8,9];
+arr1.filter(function(x,i){
+    if(i>0 && i<arr2.length-1){
+        console.log(x);
+    }
+})
+var numbers = [1, 2, 3, 4, 5];
+
+// Filtering even numbers
+var evenNumbers = numbers.filter(function(element) {
+    return element % 2 === 0;
+});
+
+console.log(evenNumbers);
 //readline++++++++++++++++++++++++++++++++++++
 //Get data from user
 
