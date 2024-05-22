@@ -1,9 +1,9 @@
 //function...+++++++++++++++++++
 //Sum in function
-function Sum(a , b){
+function Sum(a, b) {
     return a + b;
 }
-console.log(Sum(5 , 10));
+console.log(Sum(5, 10));
 //functiom with peramiter/argoment------------
 function morshed(x1, x2, x3, x4) {
     return (((x1 + x2) * x3) % x4);
@@ -13,11 +13,11 @@ console.log("break")
 
 //String.length(String gonona)
 let str = "Hello, World!a";
-  function count(a) {
+function count(a) {
     var x = str.length;
     return x;
-  }
-  console.log( count(str));
+}
+console.log(count(str));
 
 
 //Function with Swith
@@ -66,14 +66,15 @@ else {
 }
 
 //even and odd number
-var int =11;
-  function count(a) {
-    if(int % 2 == 0){
+var int = 11;
+function count(a) {
+    if (int % 2 == 0) {
         return 'Even';
-    }else{
+    } else {
         return 'Odd'
-  }}
-  console.log(count(int));
+    }
+}
+console.log(count(int));
 
 
 
@@ -172,26 +173,26 @@ for (var i1 = 3; i1 < 8; i1++) {
 
 //Array++++++++++++++++++++++++++++
 console.log("All Values in Array Function")
-const Array1 =[200,10,60,500,34,56,78,55]
+const Array1 = [200, 10, 60, 500, 34, 56, 78, 55]
 function AllValues(b) {
-  for (var i = 0; i < Array1.length; i++) {     
-  console.log(Array1[i]);  
-  }
+    for (var i = 0; i < Array1.length; i++) {
+        console.log(Array1[i]);
+    }
 }
 AllValues(Array1)
 //Big number chek in Array
 console.log("big number");
-const Array = [12, 5, 27, 8, 16, 80,2];
-function big_number (a) {
+const Array = [12, 5, 27, 8, 16, 80, 2];
+function big_number(a) {
     let x = Array[0];
     for (let i = 1; i < Array.length; i++) {
-      if (Array[i] > x) {
-        x = Array[i];
-      }
+        if (Array[i] > x) {
+            x = Array[i];
+        }
     }
     return x;
-  }
-  console.log(big_number (Array));
+}
+console.log(big_number(Array));
 
 
 //2nd test
@@ -244,10 +245,10 @@ for (let x = 0; x < task.length; x++) {
     console.log(A)
 }
 
-function a(){
-    let a=3;
-    let b=5;
-    console.log(a+b);
+function a() {
+    let a = 3;
+    let b = 5;
+    console.log(a + b);
 };
 
 
@@ -255,44 +256,106 @@ function a(){
 
 //global
 var msg1 = "Global Scope-Morshed";
-function fun1(){
+function fun1() {
     console.log(msg1);
 }
 fun1();
 
 //local
-function fun2(){
-var msg2="Local Scope-Morshed";
-console.log(msg2)
+function fun2() {
+    var msg2 = "Local Scope-Morshed";
+    console.log(msg2)
 }
 fun2();
 
 //Map...Filter++++++++++++++++++++++++++++
 console.log("Map")
-var arr1 =[1,2,3,4,5];
-arr1.map(function(x){
+var arr1 = [1, 2, 3, 4, 5];
+arr1.map(function (x) {
     console.log(x)
 })
 //filter
 console.log("filter")
-var arr2 =[1,2,3,4,5,6,7,8,9];
-arr1.filter(function(x,i){
-    if(i>0 && i<arr2.length-1){
+var arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+arr1.filter(function (x, i) {
+    if (i > 0 && i < arr2.length - 1) {
         console.log(x);
     }
 })
-var numbers = [1, 2, 3, 4, 5];
 
-// Filtering even numbers
-var evenNumbers = numbers.filter(function(element) {
-    return element % 2 === 0;
-});
+//Json++++++++++++++++++++++++++++++++++++++++++++++++++
+const studentInf = {
+    name: "Morshed",
+    age: 25,
+    address: "Dhaka",
+    phone: "01700000000",
+    //function
+    married: function (ans) {
+        return ans + this.age;
+    },
+    //array
+    gflist: ["sanjida", "mim", "ohona"],
+    //uder jeson
+    skills: {
+        java: "true",
+        javaScript: "true",
+        php: "false",
+        mySql: "true"
+    }
+}
+console.log(studentInf.name + " " + studentInf.age + " " + studentInf.married("no ") + " " + studentInf.gflist[1] + " " + studentInf.skills.java);
 
-console.log(evenNumbers);
+//array of jeso----------------------------
+const student = [
+    {
+        name: "Morshed",
+        age: 25
+    },
+    {
+        name: "karim",
+        age: 26
+    },
+    {
+        name: "rohim",
+        age: 27
+    },
+    {
+        name: "karim",
+        age: 28
+    },
+    {
+        name: "mohammod",
+        age: 29
+    },
+    {
+        name: "abdullah",
+        age: 30
+    }
+]
+console.log(student[2]);
+console.log(student[2].name);
+student.forEach((x) => {
+    console.log(x.name + " 🙂 " + x.age);
+})
+
+//Promise+++++++++++++++++++++++++++++++++++++++++++
+
+console.log("hi");
+console.log("first");
+console.log("second");
+console.log("");
+setTimeout(function subo() {
+    console.log("Promise...thirld");
+}, 1000)
+console.log("four");
+console.log("five");
+console.log("six");
+
+
 //readline++++++++++++++++++++++++++++++++++++
 //Get data from user
 
-/*const readline = require('readline');
+const readline = require('readline');
 const Test = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -303,4 +366,4 @@ Test.question('Please Morshed Enter the First value = ', (first) => {
         console.log(`Congratulation Morshed Your Result is = ${sum}`);
         Test.close();
     });
-});*/
+});
