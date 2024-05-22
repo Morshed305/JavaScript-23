@@ -355,15 +355,15 @@ console.log("six");
 //readline++++++++++++++++++++++++++++++++++++
 //Get data from user
 
-const readline = require('readline');
-const Test = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-Test.question('Please Morshed Enter the First value = ', (first) => {
-    Test.question('Please Morshed Enter the Second value = ', (second) => {
-        const sum = parseInt(first) + parseInt(second);
-        console.log(`Congratulation Morshed Your Result is = ${sum}`);
-        Test.close();
-    });
-});
+// const readline = require('readline');
+// const Test = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+// Test.question('Please Morshed Enter the First value = ', (first) => {
+//     Test.question('Please Morshed Enter the Second value = ', (second) => {
+//         const sum = parseInt(first) + parseInt(second);
+//         console.log(`Congratulation Morshed Your Result is = ${sum}`);
+//         Test.close();
+//     });
+// });
